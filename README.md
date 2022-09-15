@@ -10,7 +10,7 @@ This productivity app was designed to help speed up the workflow of its ACC user
 formatting and preparing said data for the database is a lengthy error-prone process. Most importantly, the addresses
 need to be accurate and in a strict format which will initiate downstream problems if not inputted correctly.
 
-This app aims to automate this process by leveraging Canada Post's API. It will reduce manual errors and make sure the submitted addresses are legitimate.
+This app aims to automate this process by leveraging Canada Post's API. It reduced manual errors and made sure that submitted addresses were legitimate.
 
 ---
 
@@ -29,13 +29,13 @@ urllib | numpy | pandas | xml.dom.minidom | IPython.display | copy
 
 ## 😵 Class / Method Summary
 
-class correctACCsubmission():
+**class correctACCsubmission()**:
 - is a tool that helps automate the processes involved with ACC Group Submissions. 
 - It takes information from an xcel sheet (a member form submission) and formats the data in a way that allows for an IMIS submission. 
 - the Perfect_Template.xlsx is a heading only excel file that serves as an empty base template, that once filled, will be submitted to the IMIS database. The xlsx file is imported, and a panda series is created.
 - the ACC_MailOut_Template.xlsx is a form filled out by an ACC member and submitted back to an ACC agent. 
        
-class AddressComplete():
+**class AddressComplete()**:
 - is a collection of functions that handle the input, and return, of an address (a string) and its submission to the Canada Post API. 
 - In addition, functions dealing with the selection and input behaviours help navigate the Canada Post suggestions that exist 
 
